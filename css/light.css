@@ -1,0 +1,260 @@
+* {
+    
+    transition: background-color .2s linear;
+    transition: color .2s linear;
+
+}
+
+
+
+body {
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    background-color: white;
+
+    color: black;
+
+}
+
+
+
+input {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    margin-top: 5px;
+
+    text-align: center;
+
+    height: 60px;
+
+    width: 200px;
+
+    background-color: white;
+
+}
+
+
+
+input[type="radio"] {
+
+    height: 14px;
+
+    width: 15px;
+
+}
+
+
+
+input[name="create"] {
+
+    height: 50px;
+
+    width: 130px;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    border: 0;
+
+    border-radius: 4%;
+
+    background-color: red;
+
+    box-shadow: 2px 2px black;
+
+}
+
+
+
+input[name="create"]:disabled {
+
+    background-color: gray;
+
+    cursor: no-drop;
+
+}
+
+
+
+textarea {
+
+    background-color: white;
+
+    height: 100px;
+
+    width: 300px;
+
+}
+
+
+
+sup {
+
+    cursor: help;
+
+}
+
+
+
+select {
+
+    background-color: white;
+
+    color: black;
+
+    height: 30px;
+
+    width: 120px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+#to {
+
+    display: none;
+
+}
+
+
+
+input[name="list"] {
+
+    color: black;
+
+    font-size: 14px;
+
+    width: 150px;
+
+    height: 30px;
+
+    margin-bottom: -10px;
+
+}
+
+
+
+#list {
+
+    position: fixed;
+
+    border: 1px solid black;
+
+    padding: 10px;
+
+    display: none;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 800px;
+
+    margin-left: -400px;
+
+    margin-top: -220px;
+
+    background-color: white;
+
+    padding-top: -18px;
+
+}
+
+
+
+tr, td, th {
+
+    text-align: center;
+
+    padding: 5px;
+
+}
+
+
+
+.close {
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    color: white;
+
+    padding: 3px;
+
+    font-size: 15px;
+
+    margin-left: -17px;
+
+    margin-top: -20px;
+
+    position: fixed;
+
+    cursor: pointer;
+
+}
+
+
+
+i {
+
+    cursor: help;
+
+}
+
+
+
+.ban {
+
+    color: red;
+
+}
+
+
+
+.delete {
+
+    cursor: pointer !important;
+
+}
+
+
+
+.color {
+    color: black;
+}
+
+
+
+.pager {
+    color:orange;
+}
+
+
+
+.pager:hover {
+    cursor: pointer;
+}
+
+
+
+.next {
+    float: right;
+}
+
+
+
+.red::-webkit-input-placeholder {
+    color: white;
+}
