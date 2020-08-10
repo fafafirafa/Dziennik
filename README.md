@@ -10,7 +10,7 @@ Nie jest to jakoś ładnie zoptymalizowana strona, natomiast jeden z pierwszych 
 
 # Objaśnienie (?)
 
-Wsszystko powinno być jasne, natomiast jeśli chodzi o plik "insert.php" w folderze includes, to służy mi on jedynie do wrzucania spontanicznej informacji do bazy, aby potem była wyświetlana ostatnia wiadomość z większymi zmianami na stronie przy pierwszym wejściu (lub aż wygaśnie ciasteczko).
+Wszystko powinno być jasne, natomiast jeśli chodzi o plik "insert.php" w folderze includes, to służy mi on jedynie do wrzucania spontanicznej informacji do bazy, aby potem była wyświetlana ostatnia wiadomość z większymi zmianami na stronie przy pierwszym wejściu (lub aż wygaśnie ciasteczko).
 
 # INSTALACJA
 
