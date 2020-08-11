@@ -26,24 +26,6 @@ if (mysqli_connect_errno()) {
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
 
-    <!-- Font Awesone -->
-    <script src="https://kit.fontawesome.com/5bbcc74a28.js" crossorigin="anonymous"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168631125-1"></script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-
-      gtag('js', new Date());
-
-      gtag('config', 'UA-168631125-1');
-    </script>
-
     <script src="scripts/remove.js"></script>
   </head>
 
