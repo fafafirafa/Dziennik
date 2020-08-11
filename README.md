@@ -6,7 +6,7 @@ Prywatny dziennik banów i timeoutów danych np u danego streamera.
 Pomaga to bardzo jeśli ktoś streamuje na YouTube bądź innej platformie na której nie ma logów.
 Zostało to zaprojektowane przeze mnie tylko po to, że jeśli ktoś miałby jakieś pytania to aby zobaczyć za co mógł otrzymać wykluczenie.
 
-Nie jest to jakoś ładnie zoptymalizowana strona, natomiast jeden z pierwszych tak "rozbudowanych" projektów.
+Nie jest to jakoś ładnie zoptymalizowana strona, natomiast jeden z pierwszych tego typu projektów jak i zastosowanych w nim rzeczy.
 
 # Objaśnienie (?)
 
