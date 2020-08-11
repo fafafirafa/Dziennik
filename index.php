@@ -33,7 +33,7 @@ if (mysqli_connect_errno()) {
   <body>
     <?php
 
-    include 'include/notifaction.php';
+    include 'include/notification.php';
 
     ?>
     <span title="Light/Dark mode" class="color" style="top:10;right:10;position:fixed;"><i style="cursor:pointer;" class="fas fa-adjust"></i></span>
