@@ -1,3 +1,5 @@
+
 include/connection.php
 include/insert.php
-workspace.*
+include/insert.php
+workspace.code-workspace
