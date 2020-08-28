@@ -25,6 +25,7 @@ input[type="radio"] {
 }
 
 input[name="create"] {
+    cursor: pointer;
     height: 50px;
     width: 130px;
     margin-top: 10px;
