@@ -17,7 +17,7 @@ include 'connection.php';
         }
         $count--;
         if($mysqli->query("DELETE FROM `wykluczenia` WHERE Id=$Id")){
-            $mysqli->query("UPDATE `uzytkownicy` SET `Wpisy` = '$count' WHERE `User` = '$nadajacy'");
+            $mysqli->query("UPDATE `uzytkownicy` SET `Wpisy` = '$count' WHERE `User` = '$user'");
             echo "Pomyślnie usunięto";
         } else {
             printf($mysqli->error);
