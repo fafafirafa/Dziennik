@@ -18,9 +18,9 @@ if (isset($_POST["stream"]) && isset($_POST["give"]) && isset($_POST["givento"])
 
     $count = $mysqli->query("SELECT `Wpisy` FROM `uzytkownicy` WHERE `User` = '$nadajacy'");
     if ($count->num_rows > 0) {
-        while ($row = $count->fetch_assoc()) {
+        $row = $count->fetch_assoc();
             $count = $row['Wpisy'];
-        }
+        
         $count++;
     } else {
         $insert = $mysqli->query("INSERT INTO `uzytkownicy`(`User`, `Password`,`Wpisy`) VALUES ('$nadajacy',0,0)");

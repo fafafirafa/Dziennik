@@ -20,6 +20,11 @@ input[name="list"] {
     color: white;
 }
 
+input[name="create"] {
+    background-color: red;
+    box-shadow: 2px 2px black;
+}
+
 #list {
     background-color: rgb(47, 49, 54);
 }

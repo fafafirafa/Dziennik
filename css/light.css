@@ -20,8 +20,6 @@ input[name="list"] {
     color: black;
 }
 
-
-
 #list {
     background-color: white;
 }
@@ -37,4 +35,9 @@ input[name="list"] {
 
 .red::-webkit-input-placeholder {
     color: black;
+}
+
+input[name="create"] {
+    background-color: red;
+    box-shadow: 2px 2px black;
 }
