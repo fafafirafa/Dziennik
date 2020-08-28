@@ -1,5 +1,4 @@
 
 include/connection.php
-include/insert.php
-include/insert.php
 workspace.code-workspace
+include/insert.php
