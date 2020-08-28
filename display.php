@@ -1,6 +1,16 @@
 <?php
 include 'include/connection.php';
-
+if($mysqli->connect_errno){
+    echo "DB CONNECTION ERROR";
+} else {
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+    }
+    if($_SESSION['login'] === true){
+        $log = true;
+    } else {
+        $log = false;
+    }
 echo "<span class='close'>X</span>
     <select style='width: 160px;' class='streamSelect'>";
 
@@ -73,18 +83,25 @@ if ($result->num_rows > 0) {
         <th>Godzina</th>
         <th>Data</th>
         <th>Powod</th>
-        <th>Szczegoly</th>
-        <th><i>Usuń</i></th>
-        </tr>";
+        <th>Szczegoly</th>";
+        if($log){echo "<th><i>Usuń</i></th>";}
+        echo "</tr>";
 
     while ($row = $result->fetch_assoc()) {
         ($row['Czas'] == "") ? $czas = "Forever" : $czas = $row['Czas'];
         ($row['Typ'] == "Perm") ? ($ban = "<span class='ban'>" . $row['Typ'] . "</span>") : $ban = $row['Typ'];
         echo "
-        <tr><td>" . $row['Stream'] . "</td><td>" . $row['Nadajacy'] . "</td><td class='user" . $row['Id'] . "'>" . $row['Wykluczony'] . "</td><td>"
-            . $ban . "</td><td>" . $czas . "</td><td>" . $row['Godzina'] . "</td><td>" . $row['Data'] . "</td><td>"
-            . $row['Powod'] . "</td><td><i title='" . $row["Szczegoly"] . "'>?</i></td><td><i class='fas fa-trash-alt delete' id='" . $row['Id'] . "'></i></td></tr>
-            ";
+        <tr><td>" . $row['Stream'] . "</td>
+        <td>" . $row['Nadajacy'] . "</td>
+        <td class='user" . $row['Id'] . "'>" . $row['Wykluczony'] . "</td>
+        <td>" . $ban . "</td>
+            <td>" . $czas . "</td>
+            <td>" . $row['Godzina'] . "</td>
+            <td>" . $row['Data'] . "</td><td>"
+            . $row['Powod'] . "</td>
+            <td><i title='" . $row["Szczegoly"] . "'>?</i></td>";
+            if($log){echo "<td><i class='fas fa-trash-alt delete' id='" . $row['Id'] . "'></i></td>";}
+            echo "</tr>";
     }
     echo "</table><br>";
     if($page > 0 ){
@@ -101,3 +118,7 @@ if ($result->num_rows > 0) {
 
 ?>
 <script src="scripts/users.js"></script>
+
+<?php
+}
+?>
