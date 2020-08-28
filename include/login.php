@@ -10,7 +10,6 @@ if ($mysqli->connect_errno) {
             $password = mysqli_real_escape_string($mysqli, hash("sha256", $_POST["password"]));
 
             $check = $mysqli->query("SELECT * FROM `uzytkownicy` WHERE `User`='$user' AND `Password`='$password'");
-            echo "<script>console.log('$check->num_rows')</script>";
             if ($check->num_rows > 0) {
                 $row = $check->fetch_assoc();
                 $_SESSION['user'] = $row['User'];
