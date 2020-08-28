@@ -8,11 +8,11 @@ if (isset($_POST['id'])) {
         $row = $usr->fetch_assoc();
         $user = $row['Nadajacy'];
     }
+    
     $count = $mysqli->query("SELECT `Wpisy` FROM `uzytkownicy` WHERE `User` = '$user'");
     if ($count->num_rows > 0) {
         $row = $count->fetch_assoc();
         $count = $row['Wpisy'];
-
         $count--;
     } else {
         $count = 0;
