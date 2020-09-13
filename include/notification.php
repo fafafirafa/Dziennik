@@ -2,10 +2,9 @@
 
 $info = $mysqli->query("SELECT * FROM `ogloszenia` ORDER BY Id desc LIMIT 1");
 if ($info->num_rows > 0) {
-    while ($row = $info->fetch_assoc()) {
+    $row = $info->fetch_assoc();
         $last = $row['Id'];
         $message = $row['Tresc'];
-    }
 }
 if ($last !== $_COOKIE['changes'] || !isset($_COOKIE['changes'])) {
     echo '<div id="wrapper">

@@ -18,12 +18,11 @@ $(".delete").click(function () {
 $(".streamSelect").change(function () {
     var stream = serialize({ 'str': $(this).val() });
     $("#list").load("display.php?" + stream);
-
 });
 
 $("i.fa-search").click(function () {
     if ($("#search").val() !== "" && $("#search").val() !== undefined) {
-        var idiot = serialize({ 'idiota': $("#search").val() });
+        var idiot = serialize({ 'idiota' : $("#search").val() });
         $("#list").load("display.php?" + idiot);
     } else {
         $("#search").css('background-color', 'red');

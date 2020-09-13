@@ -4,6 +4,8 @@ if ($mysqli->connect_errno) {
     echo "DB CONNECTION ERROR";
 } else {
 
+    include "session.php";
+
     if ($_SESSION['login'] === false || !isset($_SESSION['login'])) {
         if (isset($_POST["push"])) {
             $user = mysqli_real_escape_string($mysqli, $_POST['login']);
@@ -16,8 +18,8 @@ if ($mysqli->connect_errno) {
                 $_SESSION['login'] = true;
                 header("Refresh:0");
             } else {
-                echo "<span style='color:red;'>Nieprawidłowa kombinacja loginu i hasła</span><br>";
-                echo $password;
+                echo "<span style='color:red;display: flex;margin-left: 40%;'>Nieprawidłowa kombinacja loginu i hasła</span><br>";
+                echo '<script>console.log(\'$password\')</script>';
             }
         }
 ?>
