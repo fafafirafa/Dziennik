@@ -35,8 +35,8 @@ if (empty($everyone)) {
         $result = $mysqli->query("SELECT `Id`, `Stream`, `Nadajacy`, `Wykluczony`, `Typ`, `Czas`, `Godzina`, `Data`, `Powod`, `Szczegoly` FROM `wykluczenia` ORDER BY Id desc LIMIT $from,$max ");
         $check = $mysqli->query("SELECT `Id` FROM `wykluczenia` ORDER BY Id desc LIMIT $fr,$max ");
     } else {
-        $result = $mysqli->query("SELECT `Id`, `Stream`, `Nadajacy`, `Wykluczony`, `Typ`, `Czas`, `Godzina`, `Data`, `Powod`, `Szczegoly` FROM `wykluczenia` WHERE Wykluczony = '$idiota' ORDER BY Id desc LIMIT $from,$max ");
-        $check = $mysqli->query("SELECT `Id` FROM `wykluczenia` WHERE Wykluczony = '$idiota' ORDER BY Id desc LIMIT $fr,$max ");
+        $result = $mysqli->query("SELECT `Id`, `Stream`, `Nadajacy`, `Wykluczony`, `Typ`, `Czas`, `Godzina`, `Data`, `Powod`, `Szczegoly` FROM `wykluczenia` WHERE Wykluczony LIKE '%$idiota%' ORDER BY Id desc LIMIT $from,$max ");
+        $check = $mysqli->query("SELECT `Id` FROM `wykluczenia` WHERE Wykluczony LIKE '%$idiota%' ORDER BY Id desc LIMIT $fr,$max ");
     }
     $streams = $mysqli->query("SELECT DISTINCT `Stream` FROM `wykluczenia`");
 

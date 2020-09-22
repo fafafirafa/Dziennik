@@ -25,6 +25,7 @@ $("i.fa-search").click(function () {
         var idiot = serialize({ 'idiota' : $("#search").val() });
         $("#list").load("display.php?" + idiot);
     } else {
+        $("#list").load("display.php");
         $("#search").css('background-color', 'red');
         $("#search").addClass('red');
     }
