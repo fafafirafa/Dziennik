@@ -1,4 +1,5 @@
 <?php
+//ini_set('display_errors', 1);
 include 'include/connection.php';
 if($mysqli->connect_errno){
     echo "DB CONNECTION ERROR";

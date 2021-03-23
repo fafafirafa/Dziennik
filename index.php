@@ -1,4 +1,5 @@
 <?php
+//ini_set('display_errors', 1);
 include "include/connection.php";
 
 if ($mysqli->connect_errno) {
@@ -6,28 +7,28 @@ if ($mysqli->connect_errno) {
 } else {
   session_start();
 ?>
-  <html>
-
+  <html lang="pl">
   <head>
     <title>Dzienniczek banów</title>
     <link rel="icon" href="banhammer.png">
     <link rel="stylesheet" href="css/static.css">
-    <?php
-    if ($_COOKIE["mode"] == "dark") {
+
+    <?php if ($_COOKIE["mode"] == "dark") {
       echo '<link id="style" rel="stylesheet" href="css/dark.css">';
     } else {
       echo '<link id="style" rel="stylesheet" href="css/light.css">';
-    }
-    ?>
+    } ?>
+
     <link rel="stylesheet" href="css/window.css">
     <meta charset="UTF-8">
     <script src="scripts/jquery-3.5.1.min.js"></script>
     <script src="scripts/remove.js"></script>
+
   </head>
 
   <body>
 
-    <span title="Light/Dark mode" class="color" style="top:10;right:10;position:fixed;"><i style="cursor:pointer;" class="fas fa-adjust"></i></span>
+    <span title="Light/Dark mode" class="color" style="top:10px;right:10px;position:fixed;"><i style="cursor:pointer;" class="fas fa-adjust"></i></span>
 
     <input type="button" name="list" value="Lista zablokowanych">
 

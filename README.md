@@ -14,6 +14,6 @@ Wszystko powinno być jasne, natomiast jeśli chodzi o plik "insert.php" w folde
 
 # INSTALACJA
 
-Aby strona działała to wystarczy jedynie stworzyć w folderze "includes" plik o nazwie "connection.php" gdzie wprowadzimy połączenie z bazą danych (zmienna powinna mieć nazwę "$mysqli".
-Oraz utworzenie struktury w bazie danych, plik .sql znajduje się w głównym folderze ;)
-Aby widzieć kilka dodatkowych ikon należy wrzucić w nagłówek link ze skryptem do Font Awesome.
+Wystarczy wypełnić plik "connection.php" w folderze "include" do połączenia z bazą danych,
+oraz utworzyć strukturę w bazie danych, plik .sql znajduje się w głównym folderze ;)
+Aby widzieć kilka dodatkowych ikon należy wrzucić w nagłówek link ze skryptem z FontAwesome.
