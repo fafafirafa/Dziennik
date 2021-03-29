@@ -68,7 +68,7 @@ echo "</select>
 if (!empty($idiota)) {
     echo " value='" . $idiota . "'";
 }
-echo " style='margin-left: 10px; height: 30px; font-size: 17px;' placeholder='Znajdź chuja'>
+echo " style='margin-left: 10px; height: 30px; font-size: 17px;' placeholder='Znajdź nick'>
         <i class='fas fa-search' style='cursor: pointer; font-size: 25px; height: 30px; color: #2196F3;'></i>";
 
 
